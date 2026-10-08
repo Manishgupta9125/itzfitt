@@ -46,7 +46,7 @@ const COMPLIANCE_ITEMS = [
 
 export default function FeatureShowcase({ currentTheme }) {
   return (
-    <section className="relative py-24 px-6 md:px-12 bg-gradient-to-b from-[#0b0d11] via-[#10141d] to-[#08090c] text-white border-t border-white/10">
+    <section id="specs" className="relative py-24 px-6 md:px-12 bg-gradient-to-b from-[#0b0d11] via-[#10141d] to-[#08090c] text-white border-t border-white/10">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">

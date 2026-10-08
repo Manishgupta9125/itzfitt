@@ -1,5 +1,5 @@
 import React from 'react';
-import { Play, RotateCcw, Volume2, Sparkles, Terminal, SlidersHorizontal } from 'lucide-react';
+import { Play, RotateCcw, Volume2, Sparkles, SlidersHorizontal } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { audioEngine } from '../utils/audioEngine';
 
@@ -23,7 +23,7 @@ export default function InteractivePlayground({
   };
 
   return (
-    <section className="relative py-20 px-6 md:px-12 bg-[#090b0f] text-white border-t border-white/10">
+    <section id="sandbox" className="relative py-20 px-6 md:px-12 bg-[#090b0f] text-white border-t border-white/10">
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-8 border-b border-white/10 mb-10">
           <div>

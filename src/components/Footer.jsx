@@ -1,4 +1,4 @@
-import { ExternalLink, ArrowUp, Sparkles } from 'lucide-react';
+import { ExternalLink, ArrowUp } from 'lucide-react';
 
 const TECH_BADGES = [
   'HTML5 Semantic',
@@ -21,8 +21,8 @@ export default function Footer({ onResetScroll, currentTheme }) {
             <span className="font-extrabold text-xl tracking-tight text-white">
               ITZ<span style={{ color: currentTheme.trailColor }}>FIZZ</span>
             </span>
-            <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-white/10 text-white/60">
-              ASSIGNMENT SUBMISSION
+            <span className="text-[11px] font-mono px-2.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400">
+              ASSESSMENT SHOWCASE
             </span>
           </div>
           <p className="text-xs text-white/50 max-w-md">

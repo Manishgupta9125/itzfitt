@@ -1,11 +1,9 @@
-import React from 'react';
-import { Gauge, Zap, Compass, Flag } from 'lucide-react';
+import { Gauge, Zap, Flag } from 'lucide-react';
 
 export default function TelemetryHUD({ speed, scrollProgress, currentTheme }) {
   // Compute simulated vehicle metrics based on scroll
   const gear = scrollProgress === 0 ? 'N' : scrollProgress < 0.2 ? '1' : scrollProgress < 0.45 ? '2' : scrollProgress < 0.7 ? '3' : scrollProgress < 0.9 ? '4' : '5';
   const rpm = Math.round(1200 + (speed / 240) * 7200);
-  const gForce = (1.0 + (speed / 240) * 0.95).toFixed(2);
   const distance = Math.round(scrollProgress * 400); // 400m drag strip
 
   return (

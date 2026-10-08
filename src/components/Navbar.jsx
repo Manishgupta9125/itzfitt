@@ -1,5 +1,4 @@
-import { Volume2, VolumeX, Play, Pause, RotateCcw, Sparkles, Activity } from 'lucide-react';
-import { audioEngine } from '../utils/audioEngine';
+import { Volume2, VolumeX, Play, Pause, RotateCcw, Activity } from 'lucide-react';
 
 export default function Navbar({
   scrollProgress,
@@ -37,14 +36,27 @@ export default function Navbar({
                 ITZ<span style={{ color: currentTheme.trailColor }}>FIZZ</span>
               </span>
               <span className="hidden sm:inline-block px-2 py-0.5 text-[10px] font-mono uppercase tracking-widest rounded-full bg-white/10 text-white/70 border border-white/10">
-                SCROLL ARCHITECTURE
+                ASSESSMENT SHOWCASE
               </span>
             </div>
             <p className="text-[11px] text-white/40 hidden md:block">
-              Scroll-Driven McLaren 720S Kinetic Showcase
+              Scroll-Driven McLaren 720S Assessment Project
             </p>
           </div>
         </div>
+
+        {/* Navigation Links */}
+        <nav className="hidden xl:flex items-center gap-6 text-xs font-mono text-white/70">
+          <a href="#metrics" className="hover:text-white transition-colors hover:underline underline-offset-4">
+            IMPACT METRICS
+          </a>
+          <a href="#specs" className="hover:text-white transition-colors hover:underline underline-offset-4">
+            SPECIFICATIONS
+          </a>
+          <a href="#sandbox" className="hover:text-white transition-colors hover:underline underline-offset-4">
+            SANDBOX BENCH
+          </a>
+        </nav>
 
         {/* Live Telemetry Pill */}
         <div className="hidden lg:flex items-center gap-3 px-4 py-1.5 rounded-full bg-black/60 border border-white/10 text-xs font-mono">
